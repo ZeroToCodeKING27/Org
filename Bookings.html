@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Bookings | Ongersfontein Guest Farm</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Make a booking enquiry with Ongersfontein Guest Farm near Richmond in the Northern Cape. Contact us to enquire about accommodation and plan your Karoo stay.">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+
+    </div>
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg modern-navbar sticky-top">
+    <div class="container">
+
+        <a href="index.html" class="navbar-brand modern-brand">
+            <span class="brand-mark">
+                <i class="fa fa-mountain-sun"></i>
+            </span>
+            <span>
+                <strong>Ongersfontein</strong>
+                <small>Guest Farm</small>
+            </span>
+        </a>
+
+        <button type="button"
+                class="navbar-toggler modern-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto align-items-lg-center">
+
+                <a href="index.html" class="nav-item nav-link">
+                    Home
+                </a>
+
+                <a href="about.html" class="nav-item nav-link active">
+                    About
+                </a>
+
+                <a href="accommodation.html" class="nav-item nav-link">
+                    Accommodation
+                </a>
+
+                <a href="bookings.html" class="nav-item nav-link">
+                    Bookings
+                </a>
+
+                <a href="activities.html" class="nav-item nav-link">
+                    Activities
+                </a>
+
+                <a href="contact.html" class="nav-item nav-link">
+                    Contact
+                </a>
+
+            </div>
+
+            <a href="bookings.html" class="modern-nav-btn">
+                Book Your Stay
+                <i class="fa fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+<!-- =========================
+     HERO
+========================= -->
+    <section class="inner-page-hero bookings-page-hero">
+
+        <div class="inner-page-hero-bg"></div>
+
+        <div class="inner-page-hero-overlay"></div>
+
+        <div class="container inner-page-hero-content">
+
+            <span class="hero-eyebrow">
+                Plan Your Stay
+            </span>
+
+            <h1>Bookings</h1>
+
+            <p>
+                Tell us when you would like to visit and we'll help
+                you arrange your stay at Ongersfontein.
+            </p>
+
+
+            <nav aria-label="breadcrumb">
+
+                <ol class="breadcrumb modern-breadcrumb">
+
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumb-item active"
+                        aria-current="page">
+                        Bookings
+                    </li>
+
+                </ol>
+
+            </nav>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BOOKING INTRO
+    ========================== -->
+    <section class="booking-intro">
+
+        <div class="container">
+
+            <div class="booking-intro-grid">
+
+                <div>
+
+                    <span class="modern-section-label">
+                        Start Your Enquiry
+                    </span>
+
+                    <h2>
+                        Your Karoo escape starts here.
+                    </h2>
+
+                </div>
+
+
+                <div class="booking-intro-copy">
+
+                    <p>
+                        Complete the enquiry form with your preferred
+                        dates and accommodation. We'll get back to you
+                        with availability and the next steps.
+                    </p>
+
+                    <p>
+                        If you prefer to speak to us directly, you can
+                        also contact Ongersfontein Guest Farm by phone
+                        or email.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BOOKING FORM
+    ========================== -->
+    <section class="booking-section">
+
+        <div class="container">
+
+            <div class="row g-5 align-items-start">
+
+
+                <!-- Form -->
+                <div class="col-lg-7">
+
+                    <div class="booking-form-card">
+
+                        <div class="booking-form-heading">
+
+                            <span class="modern-section-label">
+                                Booking Enquiry
+                            </span>
+
+                            <h2>
+                                Tell us about your stay
+                            </h2>
+
+                            <p>
+                                Please provide your details and preferred
+                                dates. We'll contact you to confirm
+                                availability.
+                            </p>
+
+                        </div>
+
+
+                        <form action="#" method="post">
+
+
+                            <div class="row g-4">
+
+
+                                <!-- Name -->
+                                <div class="col-md-6">
+
+                                    <label for="firstName">
+                                        First Name
+                                    </label>
+
+                                    <input type="text"
+                                        id="firstName"
+                                        name="first_name"
+                                        class="booking-input"
+                                        placeholder="Your first name"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Surname -->
+                                <div class="col-md-6">
+
+                                    <label for="lastName">
+                                        Surname
+                                    </label>
+
+                                    <input type="text"
+                                        id="lastName"
+                                        name="last_name"
+                                        class="booking-input"
+                                        placeholder="Your surname"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Email -->
+                                <div class="col-md-6">
+
+                                    <label for="email">
+                                        Email Address
+                                    </label>
+
+                                    <input type="email"
+                                        id="email"
+                                        name="email"
+                                        class="booking-input"
+                                        placeholder="you@example.com"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Phone -->
+                                <div class="col-md-6">
+
+                                    <label for="phone">
+                                        Phone Number
+                                    </label>
+
+                                    <input type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        class="booking-input"
+                                        placeholder="+27 ..."
+                                        required>
+
+                                </div>
+
+
+                                <!-- Check In -->
+                                <div class="col-md-6">
+
+                                    <label for="checkIn">
+                                        Check-in Date
+                                    </label>
+
+                                    <input type="date"
+                                        id="checkIn"
+                                        name="check_in"
+                                        class="booking-input"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Check Out -->
+                                <div class="col-md-6">
+
+                                    <label for="checkOut">
+                                        Check-out Date
+                                    </label>
+
+                                    <input type="date"
+                                        id="checkOut"
+                                        name="check_out"
+                                        class="booking-input"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Cottage -->
+                                <div class="col-md-6">
+
+                                    <label for="cottage">
+                                        Preferred Cottage
+                                    </label>
+
+                                    <select id="cottage"
+                                        name="cottage"
+                                        class="booking-input">
+
+                                        <option value="">
+                                            Select a cottage
+                                        </option>
+
+                                        <option value="Sonsak">
+                                            Sonsak
+                                        </option>
+
+                                        <option value="Sonop">
+                                            Sonop
+                                        </option>
+
+                                        <option value="Bokmakierie">
+                                            Bokmakierie
+                                        </option>
+
+                                        <option value="Lyster">
+                                            Lyster
+                                        </option>
+
+                                        <option value="Tiptol">
+                                            Tiptol
+                                        </option>
+
+                                        <option value="No preference">
+                                            No preference
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- Guests -->
+                                <div class="col-md-6">
+
+                                    <label for="guests">
+                                        Number of Guests
+                                    </label>
+
+                                    <select id="guests"
+                                        name="guests"
+                                        class="booking-input">
+
+                                        <option value="">
+                                            Select
+                                        </option>
+
+                                        <option value="1">
+                                            1
+                                        </option>
+
+                                        <option value="2">
+                                            2
+                                        </option>
+
+                                        <option value="3">
+                                            3
+                                        </option>
+
+                                        <option value="4">
+                                            4
+                                        </option>
+
+                                        <option value="5">
+                                            5
+                                        </option>
+
+                                        <option value="6">
+                                            6+
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- Message -->
+                                <div class="col-12">
+
+                                    <label for="message">
+                                        Message
+                                    </label>
+
+                                    <textarea id="message"
+                                        name="message"
+                                        class="booking-input booking-textarea"
+                                        rows="6"
+                                        placeholder="Tell us anything you'd like us to know about your stay..."></textarea>
+
+                                </div>
+
+
+                                <!-- Submit -->
+                                <div class="col-12">
+
+                                    <button type="submit"
+                                        class="modern-primary-btn booking-submit">
+
+                                        Send Booking Enquiry
+
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Booking Information -->
+                <div class="col-lg-5">
+
+                    <aside class="booking-info">
+
+
+                        <div class="booking-info-image">
+
+                            <img src="img/C.png"
+                                alt="Cottage at Ongersfontein Guest Farm">
+
+                        </div>
+
+
+                        <div class="booking-info-content">
+
+                            <span class="modern-section-label">
+                                Need Help?
+                            </span>
+
+                            <h3>
+                                Prefer to speak to us?
+                            </h3>
+
+                            <p>
+                                If you have questions about the cottages,
+                                your dates or your visit, feel free to
+                                contact us directly.
+                            </p>
+
+
+                            <div class="booking-contact-list">
+
+
+                                <a href="tel:+27726042474"
+                                    class="booking-contact-item">
+
+                                    <span class="booking-contact-icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+
+                                    <span>
+                                        <small>Phone</small>
+                                        +27 72 604 2474
+                                    </span>
+
+                                </a>
+
+
+                                <a href="tel:+27828549414"
+                                    class="booking-contact-item">
+
+                                    <span class="booking-contact-icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+
+                                    <span>
+                                        <small>Alternative Phone</small>
+                                        +27 82 854 9414
+                                    </span>
+
+                                </a>
+
+
+                                <a href="mailto:info@ongersfontein.co.za"
+                                    class="booking-contact-item">
+
+                                    <span class="booking-contact-icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </span>
+
+                                    <span>
+                                        <small>Email</small>
+                                        info@ongersfontein.co.za
+                                    </span>
+
+                                </a>
+
+
+                            </div>
+
+
+                            <div class="booking-location">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <div>
+                                    <strong>Ongersfontein Guest Farm</strong>
+
+                                    <span>
+                                        Plaas 146, N1 Highway,<br>
+                                        Richmond, Northern Cape,<br>
+                                        South Africa
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COTTAGE LINK
+    ========================== -->
+    <section class="booking-cottages">
+
+        <div class="container">
+
+            <div class="booking-cottages-inner">
+
+                <div>
+
+                    <span class="modern-section-label">
+                        Still Deciding?
+                    </span>
+
+                    <h2>
+                        Explore our accommodation.
+                    </h2>
+
+                    <p>
+                        Take a look at the cottages before sending
+                        through your booking enquiry.
+                    </p>
+
+                </div>
+
+
+                <a href="accommodation.html"
+                    class="modern-outline-btn">
+
+                    View Accommodation
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="modern-footer">
+
+        <div class="container modern-footer-main">
+
+            <div class="row g-5">
+
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="footer-brand">
+
+                        <a href="index.html"
+                            class="footer-logo">
+
+                            <span class="brand-icon">
+                                <i class="fa-solid fa-mountain-sun"></i>
+                            </span>
+
+                            <span class="brand-text">
+
+                                <strong>
+                                    Ongersfontein
+                                </strong>
+
+                                <small>
+                                    Guest Farm
+                                </small>
+
+                            </span>
+
+                        </a>
+
+                        <p>
+                            A peaceful guest farm experience in the
+                            Northern Cape, surrounded by the timeless
+                            landscapes of the Karoo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Explore -->
+                <div class="col-lg-2 col-md-6">
+
+                    <div class="footer-column">
+
+                        <h5>Explore</h5>
+
+                        <a href="index.html">Home</a>
+
+                        <a href="about.html">About</a>
+
+                        <a href="accommodation.html">
+                            Accommodation
+                        </a>
+
+                        <a href="activities.html">
+                            Activities
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Stay -->
+                <div class="col-lg-2 col-md-6">
+
+                    <div class="footer-column">
+
+                        <h5>Your Stay</h5>
+
+                        <a href="bookings.html">
+                            Bookings
+                        </a>
+
+                        <a href="faq.html">
+                            FAQ
+                        </a>
+
+                        <a href="contact.html">
+                            Contact
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="footer-column footer-contact">
+
+                        <h5>Find Us</h5>
+
+                        <p>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>
+                                Plaas 146, N1 Highway,<br>
+                                Richmond, Northern Cape,<br>
+                                South Africa
+                            </span>
+
+                        </p>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <span>
+
+                                <a href="tel:+27726042474">
+                                    +27 72 604 2474
+                                </a>
+
+                                <br>
+
+                                <a href="tel:+27828549414">
+                                    +27 82 854 9414
+                                </a>
+
+                            </span>
+
+                        </p>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <a href="mailto:info@ongersfontein.co.za">
+                                info@ongersfontein.co.za
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="modern-footer-bottom">
+
+                <p>
+                    &copy; 2026 Ongersfontein Guest Farm.
+                    All Rights Reserved.
+                </p>
+
+                <div>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                    <a href="faq.html">
+                        FAQ
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Spinner -->
+    <script>
+
+        window.addEventListener("load", function () {
+
+            const spinner = document.getElementById("spinner");
+
+            if (spinner) {
+                spinner.classList.remove("show");
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
